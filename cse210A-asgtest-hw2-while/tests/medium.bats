@@ -40,3 +40,22 @@ load harness
   check 'if false then while true do skip else x := 2' '{x → 2}'
 }
 
+@test "medium-11" {
+  check 'i:=5; fact := 1; while 0<i do { fact := fact * i; i := i - 1 }' '{fact → 120, i → 0}'
+}
+
+@test "medium-12" {
+  check 'i:=3; fact := 1; while 0<i do { fact := fact * i; i := i - 1 }' '{fact → 6, i → 0}'
+}
+
+@test "medium-13" {
+  check 'i:=-1; fact := 1; while 0<i do { fact := fact * i; i := i - 1 }' '{fact → 1, i → -1}'
+}
+
+@test "medium-14" {
+  check 'while false do x:=1; if true then y:=1 else z:=1' '{y → 1}'
+}
+
+@test "medium-15" {
+  check 'while false do x:=1; y:=1' '{y → 1}'
+}
