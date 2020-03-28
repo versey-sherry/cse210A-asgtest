@@ -21,7 +21,7 @@ load harness
 }
 
 @test "easy-6" {
-  check 'x := 1 * 9; if 5 < x then x := 2 - 2 else y := 9' '{x → 0}'
+  check 'x := 1 * 9 ; if 5 < x then x := 2 - 2 else y := 9' '{x → 0}'
 }
 
 @test "easy-7" {

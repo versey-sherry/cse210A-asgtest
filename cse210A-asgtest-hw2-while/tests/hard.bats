@@ -49,7 +49,7 @@ load harness
 }
 
 @test "hard-13" {
-  check 'if ( true ∨ true ) then x := z + y else x := y + 1; skip' '{x → 0}'
+  check 'if ( true ∨ true ) then x := z + y else x := y + 1 ; skip' '{x → 0}'
 }
 
 @test "hard-14" {
@@ -57,16 +57,16 @@ load harness
 }
 
 @test "hard-15" {
-  check 'if ( y * 4 < -1 - x ∧ - 1 = 0 + y) then z := ( -1 - -1 ) * -4 else z := 2 * -4; if ( y- -3 = y * z ∨ n * y < 1 * 2) then skip else if ( 1 < 0 - x ∨ true ) then x := y + -4 else y:= -4 * y' '{z → -8}'
+  check 'if ( y * 4 < -1 - x ∧ - 1 = 0 + y) then z := ( -1 - -1 ) * -4 else z := 2 * -4 ; if ( y- -3 = y * z ∨ n * y < 1 * 2) then skip else if ( 1 < 0 - x ∨ true ) then x := y + -4 else y:= -4 * y' '{z → -8}'
 }
 
 
 @test "hard-16" {
-  check 'if ( false ∨ 3 < y + X ) then l := lv + -1 else x := -4 - z; while -1 - p = 2 - -3 ∧ false do while ( ¬ ( 2 * -2 < y * y ) ) do skip' '{x → -4}'
+  check 'if ( false ∨ 3 < y + X ) then l := lv + -1 else x := -4 - z ; while -1 - p = 2 - -3 ∧ false do while ( ¬ ( 2 * -2 < y * y ) ) do skip' '{x → -4}'
 }
 
 @test "hard-17" {
-  check 'while ( ¬ ( 0- -1 < 2 + z ) ) do skip; while -1 * IY = 2 - L∧ 0 + x < 2 + 2 do while ( ¬ ( z + S = z - -1 ) ) do if ( false ∨ NT + -3 = 3 ) then y := k * 0 else y := 0 - y' '{}'
+  check 'while ( ¬ ( 0- -1 < 2 + z ) ) do skip ; while -1 * IY = 2 - L∧ 0 + x < 2 + 2 do while ( ¬ ( z + S = z - -1 ) ) do if ( false ∨ NT + -3 = 3 ) then y := k * 0 else y := 0 - y' '{}'
 }
 
 @test "hard-18" {
