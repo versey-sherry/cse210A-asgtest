@@ -13,6 +13,14 @@ load harness
 }
 
 @test "multiplication-4" {
+  check '20 * 5' '100'
+}
+
+@test "multiplication-5" {
+  check '0 * 2' '0'
+}
+
+@test "multiplication-6" {
   check '-2 * -0' '0'
 }
 

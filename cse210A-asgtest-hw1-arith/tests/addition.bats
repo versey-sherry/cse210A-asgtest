@@ -9,11 +9,19 @@ load harness
 }
 
 @test "addition-3" {
-  check '1 + 0' '1'
+  check '100 + 0' '100'
 }
 
 @test "addition-4" {
   check '-1 + -3' '-4'
+}
+
+@test "addition-5" {
+  check '10 + -3' '7'
+}
+
+@test "addition-6" {
+  check '-1 + 0' '-1'
 }
 
 @test "addition-multiple-1" {
@@ -26,4 +34,8 @@ load harness
 
 @test "addition-multiple-3" {
   check '-1 + -2 + 3' '0'
+}
+
+@test "addition-multiple-4" {
+  check '-1 + -5 + -1' '-7'
 }
