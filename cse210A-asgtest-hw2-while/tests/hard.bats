@@ -72,7 +72,3 @@ load harness
 @test "hard-18" {
   check 'if ( z - 2 < -2 ∧ y * -1 < z * 2 ) then while ( ¬ ( 2 * z < y + y ) ) do skip else while H + z = 0 - -2 ∧ -2 * 0 < 3 - X do skip' '{}'
 }
-
-@test "hard-15-copy" {
-  check 'if ( y * 4 < -1 - x ∧ -1 = 0 + y ) then skip else skip' '{}'
-}
