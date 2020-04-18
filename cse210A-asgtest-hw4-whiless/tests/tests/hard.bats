@@ -19,7 +19,7 @@ load harness
 }
 
 @test "hard-5" {
-  check 'while 0 = z * -4 do z := -1' '⇒ z := -1; while (0=(z*-4)) do { z := -1 }, {}
+  check 'while 0 = z * -4 do z := -1' '⇒ z := -1 ; while (0=(z*-4)) do { z := -1 }, {}
 ⇒ skip; while (0=(z*-4)) do { z := -1 }, {z → -1}
 ⇒ while (0=(z*-4)) do { z := -1 }, {z → -1}
 ⇒ skip, {z → -1}'

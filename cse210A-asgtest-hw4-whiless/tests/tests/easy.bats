@@ -47,7 +47,7 @@ load harness
 }
 
 @test "easy-10" {
-  check 'if 0 < x ∧ 4 < y then x := 1 else x:= 3' '⇒ x := 3, {}
+  check 'if 0 < x ∧ 4 < y then x := 1 else x := 3' '⇒ x := 3, {}
 ⇒ skip, {x → 3}'
 }
 
@@ -91,7 +91,7 @@ load harness
 }
 
 @test "easy-18" {
-  check 'z := 26 ; { a := 1 ; b := 2; c := 3 }' '⇒ skip; a := 1; b := 2; c := 3, {z → 26}
+  check 'z := 26 ; { a := 1 ; b := 2 ; c := 3 }' '⇒ skip; a := 1; b := 2; c := 3, {z → 26}
 ⇒ a := 1; b := 2; c := 3, {z → 26}
 ⇒ skip; b := 2; c := 3, {a → 1, z → 26}
 ⇒ b := 2; c := 3, {a → 1, z → 26}

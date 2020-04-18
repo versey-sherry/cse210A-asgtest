@@ -57,7 +57,7 @@ load harness
 }
 
 @test "medium-3" {
-  check 'i := -1 ; fact := 1 ; while 0 < i do { fact := fact * i; i := i - 1 }' '⇒ skip; fact := 1; while (0<i) do { fact := (fact*i); i := (i-1) }, {i → -1}
+  check 'i := -1 ; fact := 1 ; while 0 < i do { fact := fact * i ; i := i - 1 }' '⇒ skip; fact := 1; while (0<i) do { fact := (fact*i); i := (i-1) }, {i → -1}
 ⇒ fact := 1; while (0<i) do { fact := (fact*i); i := (i-1) }, {i → -1}
 ⇒ skip; while (0<i) do { fact := (fact*i); i := (i-1) }, {fact → 1, i → -1}
 ⇒ while (0<i) do { fact := (fact*i); i := (i-1) }, {fact → 1, i → -1}
