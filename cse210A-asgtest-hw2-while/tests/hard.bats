@@ -41,7 +41,7 @@ load harness
 }
 
 @test "hard-11" {
-  check 'if ( true ∨ - 1 < 0 ) then k := ( 49 ) * 3 + k else k := 2 * 2 * 2 + 3' '{k → 147}'
+  check 'if ( true ∨ -1 < 0 ) then k := ( 49 ) * 3 + k else k := 2 * 2 * 2 + 3' '{k → 147}'
 }
 
 @test "hard-12" {
