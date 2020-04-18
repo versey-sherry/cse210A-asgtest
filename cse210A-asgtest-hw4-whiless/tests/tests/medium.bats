@@ -129,7 +129,7 @@ load harness
 }
 
 @test "medium-6" {
-  check 'a := 369 ; b := 1108; while ¬(a=b) do { if a < b then b := b - a else a := a - b }' '⇒ skip; b := 1108; while ¬(a=b) do { if (a<b) then { b := (b-a) } else { a := (a-b) } }, {a → 369}
+  check 'a := 369 ; b := 1108 ; while ¬ ( a = b ) do { if a < b then b := b - a else a := a - b }' '⇒ skip; b := 1108; while ¬(a=b) do { if (a<b) then { b := (b-a) } else { a := (a-b) } }, {a → 369}
 ⇒ b := 1108; while ¬(a=b) do { if (a<b) then { b := (b-a) } else { a := (a-b) } }, {a → 369}
 ⇒ skip; while ¬(a=b) do { if (a<b) then { b := (b-a) } else { a := (a-b) } }, {a → 369, b → 1108}
 ⇒ while ¬(a=b) do { if (a<b) then { b := (b-a) } else { a := (a-b) } }, {a → 369, b → 1108}

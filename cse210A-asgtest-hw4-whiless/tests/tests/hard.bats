@@ -19,7 +19,7 @@ load harness
 }
 
 @test "hard-5" {
-  check 'while 0 = z * -4 do z := -1' '⇒ z := -1 ; while (0=(z*-4)) do { z := -1 }, {}
+  check 'while 0 = z * -4 do z := -1' '⇒ z := -1; while (0=(z*-4)) do { z := -1 }, {}
 ⇒ skip; while (0=(z*-4)) do { z := -1 }, {z → -1}
 ⇒ while (0=(z*-4)) do { z := -1 }, {z → -1}
 ⇒ skip, {z → -1}'
@@ -70,7 +70,7 @@ load harness
 }
 
 @test "hard-15" {
-  check 'x :=3 * f0 ; z := 2 * x' '⇒ skip; z := (2*x), {x → 0}
+  check 'x := 3 * f0 ; z := 2 * x' '⇒ skip; z := (2*x), {x → 0}
 ⇒ z := (2*x), {x → 0}
 ⇒ skip, {x → 0, z → 0}'
 }
@@ -87,7 +87,7 @@ load harness
 }
 
 @test "hard-18" {
-  check 'while false do c:= x * z' '⇒ skip, {}'
+  check 'while false do c := x * z' '⇒ skip, {}'
 }
 
 @test "hard-19" {
