@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 make
-./bin/bats tests/
+$(dirname $0)/bin/bats $(dirname $0)/tests/
